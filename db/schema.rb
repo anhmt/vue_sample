@@ -10,11 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170624010148) do
+ActiveRecord::Schema.define(version: 20170705083033) do
 
   create_table "influencers", force: :cascade do |t|
     t.string "name", null: false
     t.string "email"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "items", force: :cascade do |t|
+    t.string "name", null: false
+    t.integer "rate"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
