@@ -22,3 +22,6 @@ en:
         title: Edit Influencer
       list:
         title: Influencer List
+    items:
+      list:
+        title: Item List
